@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+canvas{
+	border:1px solid #ccc;
+}
+</style>
+<body>
+	
+<canvas id="myCanvas" width="700" height="500"></canvas>
+
+
+<script src="index.js"></script>
+<script>
+new lineChart({
+
+	x:["1月","2月","3月","4月","5月","6月"],
+	y:[0,50,100,150,200,250,300],
+	uText:"平方米/m2",
+	data:[
+
+		{color:"red",da:[300,200,56,200,54,30]},
+		{color:"blue",da:[60,20,74,100,222,260]}
+
+	]
+
+},document.getElementById("myCanvas"));
+</script>
+
+
+</body>
+</html>
